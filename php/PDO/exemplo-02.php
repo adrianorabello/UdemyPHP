@@ -12,6 +12,7 @@
 
 	/*
 		cria doi parametros para serem recebidos nos campos values. Importante ressaltar que o nome dos parametros é case sensitive	
+		COM esse tipo de inserção não precisamos colocar strings dentro de aspas e deixar numeros sem aspas pois o PDO faz isso automaticamente
 	*/
 	$stmt = $con->prepare("INSERT INTO tb_usuarios (deslogin, dessenha) VALUES(:LOGIN, :PASSWORD)");
 	$login = "Jose";
