@@ -20,6 +20,8 @@
 		percorre todo o result pegando o nome do campo e o seu valor. Precisa de 2 foreach para poder imprimir com o ocmando echo pu usar o json para pegar os dados de maneira mais simplificada
 	*/
 
+		
+
 	foreach ($result as $row) {
 		foreach ($row as $key => $value) {
 			echo "<strong>".$key."</strong> - " . $value."<br/>";

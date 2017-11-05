@@ -8,9 +8,42 @@
 	$usuario = new Usuario();
 	//$usuario->loadByID(1);
 	//echo json_encode($usuario,JSON_PRETTY_PRINT);
+	//echo $usuario;
 
+	$teste = $usuario->listarUsuarios();
+
+	echo "<pre>";
+	//var_dump($teste);
+
+	echo "</pre>";
+
+
+
+	$usuario2 = new Usuario();
+
+
+	$usuario->login("user","123456");
+
+	//echo $usuario->getLogin();
+
+	var_dump($usuario);
+
+
+/* seto para login e senha do usuario 2 os valores a baxo */
+	//$usuario2->setLogin("adriano");
+	//$usuario2->setSenha("Milk1903");
 
 	
+
+
+
+
+
+	/* para inserir no BD eu apenas preciso chamar esse metodo abaixo pois os valores ja estao no objeto*/
+	//$usuario2->insert();
+
+
+
 
 	/* Pelo motivo de o metodo listarUsuario ser estatico eu posso chamar ele sem precisar instanciar um objeto */
 	//$lista = Usuario::listarUsuarios();
@@ -48,12 +81,12 @@
 
 	/* */
 
-	$usuario->loadByID(2);
+	//$usuario->loadByID(2);
 	/* deleta o usuario cujo o id é informado no parametro */
-	$usuario->delete();
+	//$usuario->delete();
 
 
-	echo $usuario;
+	//echo $usuario;
 
 
 

@@ -15,40 +15,7 @@
 		
 		}
 
-		public function getIdUsuario(){
-			return $this->idUsuario;
-		}
-
-		public function setIdUsuario($id){
-			$this->idUsuario = $id;
-		}
-
-
-		public function getLogin(){
-			return $this->login;
-		}
-
-		public function setLogin($login){
-			$this->login = $login;
-		}
-
-
-		public function getSenha(){
-			return $this->senha;
-		}
-
-		public function setSenha($senha){
-			$this->senha = $senha;
-		}
-
-
-		public function getCadastro(){
-			return $this->cadastro;
-		}
-
-		public function setCadastro($cadastro){
-			$this->cadastro =  $cadastro;
-		}
+		
 
 
 
@@ -192,6 +159,44 @@
 			$this->setLogin("");
 			$this->setCadastro(new DateTime());
 
+		}
+
+
+
+		/* get and setters */
+		public function getIdUsuario(){
+			return $this->idUsuario;
+		}
+
+		public function setIdUsuario($id){
+			$this->idUsuario = $id;
+		}
+
+
+		public function getLogin(){
+			return $this->login;
+		}
+
+		public function setLogin($login){
+			$this->login = $login;
+		}
+
+
+		public function getSenha(){
+			return $this->senha;
+		}
+
+		public function setSenha($senha){
+			$this->senha = $senha;
+		}
+
+
+		public function getCadastro(){
+			return $this->cadastro;
+		}
+
+		public function setCadastro($cadastro){
+			$this->cadastro =  $cadastro;
 		}
 
 
