@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-	
+
 	require_once("config.php");
 	$sql = new Sql();
 	$retorno = $sql->select("select * from tb_usuarios");
@@ -22,18 +22,19 @@
 	$usuario2 = new Usuario();
 
 
-	$usuario->login("user","123456");
+	$usuario->login("adriano","123");
 
 	//echo $usuario->getLogin();
 
-	var_dump($usuario);
+	//var_dump($usuario);
+	echo $usuario;
 
 
 /* seto para login e senha do usuario 2 os valores a baxo */
 	//$usuario2->setLogin("adriano");
 	//$usuario2->setSenha("Milk1903");
 
-	
+
 
 
 
