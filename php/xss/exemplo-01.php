@@ -15,7 +15,12 @@
   if (isset($_POST['busca'])) {
     //echo $_POST['busca'];
     // serve para barar as tags de html
-    echo strip_tags($_POST['busca']);
+    //echo strip_tags($_POST['busca']);
+    session_start();
+    //session_destroy();
+    //$_SESSION['busca'] = $_POST['busca'];
+
+  
   }
 
  ?>
